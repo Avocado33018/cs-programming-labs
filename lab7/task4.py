@@ -1,13 +1,10 @@
-# Считываем размеры таблицы
 r, c = map(int, input().split())
 
-# Считываем саму таблицу как список списков
 table = []
 for _ in range(r):
     row = list(map(int, input().split()))
     table.append(row)
 
-# Суммы строк
 row_sums = []
 for row in table:
     total = 0
@@ -15,7 +12,6 @@ for row in table:
         total += val
     row_sums.append(total)
 
-# Суммы столбцов
 col_sums = []
 for j in range(c):
     total = 0
